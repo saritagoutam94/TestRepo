@@ -1,0 +1,54 @@
+=========INSERT ROW =========
+
+Insert Into Emp(EmpId,EName,Salary) values(200,'B',12000)
+Insert Into Emp(EmpId,EName,Salary) values(300,'C',3000)
+Insert Into Emp(EmpId,EName,Salary) values(400,'D',25000)
+
+
+====SELECT DATA FROM TABLES ======
+
+1. SELECT * FROM EMP ---For all columns
+ 	
+	EmpId	EName	Salary
+	100		A		2000
+	200		B		12000
+	300		C		3000
+	400		D		25000
+
+2. SELECT EName,Salary FROM Emp --Selected columns
+
+	EName	Salary
+	A		2000
+	B		12000
+	C		3000
+	D		25000
+
+3. SELECT Ename,salary FROM emp WHERE Salary=2000 
+
+	Ename	salary
+	A		2000
+
+4. SELECT Ename,salary FROM emp WHERE Salary>=2000 and Salary<5000 
+
+	Ename	salary
+	A		2000
+	C		3000
+	
+============UPDATE TABLE DATA===========
+
+UPDATE table_name SET field1 = new-value1, field2 = new-value2
+[WHERE Clause]
+
+1. UPDATE  rohini SET name='Kapil Sharma' WHERE  id=5;
+
+2. ----update more then 2 columns----
+	
+	SELECT * FROM rohini;
+
+	UPDATE  rohini SET name='The Kapil Sharma' ,  salary=200 WHERE  id=5;
+
+	SELECT id, name, salary FROM rohini
+
+============DELETE FROM TABLE==========
+
+1.	DELETE FROM rohini WHERE id =2;
