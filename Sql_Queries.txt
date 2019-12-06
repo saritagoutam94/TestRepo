@@ -52,3 +52,5 @@ UPDATE table_name SET field1 = new-value1, field2 = new-value2
 ============DELETE FROM TABLE==========
 
 1.	DELETE FROM rohini WHERE id =2;
+
+================File End=================
